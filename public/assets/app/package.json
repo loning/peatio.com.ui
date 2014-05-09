@@ -1,0 +1,28 @@
+{
+  "family": "xhub",
+  "name": "app",
+  "version": "1.0.0",
+  "description": "xhub.App",
+  "homepage": "",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/uptower/hc.site.xhub.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": ["widget"],
+  "licenses": "MIT",
+  "spm": {
+    "output": ["app.js","ext.js"],
+    "alias": {
+    	"angularjs": "angular/angularjs/1.1.5/angular",
+    	"angularjs-resource" : "angular/angularjs/1.1.5/angular-resource",
+      "jquery":"jquery/jquery/1.10.1/jquery"
+    },
+    "include":"all",
+    "devAlias": {},
+    "engines": {}
+  }
+}

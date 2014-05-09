@@ -1,0 +1,104 @@
+@charset "utf-8";
+
+@import "app.less";
+@import "app.bar.less";
+
+
+/* invite form */
+
+.invite-form{
+    width:490px;margin:0 auto;padding-top:92px;
+
+    & > div.loading {
+        margin-left:100px;
+        margin-top:20px;
+    }
+    
+    & > .ui-tiptext-container{
+        margin-left:0px;
+        margin-top:20px;
+    }
+    
+    & > .ipt-wrap{
+        width:484px;
+        background:#CCE6FF;
+        padding:3px;
+        
+        &.active{
+            background:#57D6FF;
+        }
+        
+        & > .ipt-wrap2{
+            border:1px solid #008EBD;
+            background:white;
+            
+            & > input{
+                border-width:0px;
+                outline:0px;
+                background:white;
+                width:359px;
+                height:31px;
+                line-height:31px;
+                font-size:18px;
+                
+                &.ng-valid{
+                    border:0px;
+                }
+                
+                &.ng-invalid{
+                    border:0px;
+                    color:#D93600;
+                }
+                
+                &.ng-valid-email{
+                    border:0px;
+                    outline-style:none;
+                }
+            }
+            
+            & > a{
+                width:100px;
+                height:43px;
+                display:block;
+                float:right;
+                margin:1px;
+                
+                & :after{
+                    clear:right;
+                }
+                
+                &.disabled{
+                    background:url('images/invite_btn.png');
+                }
+                
+                &.active{
+                    background:url('images/invite_btn_active.png');
+                }
+            }
+        }
+    }
+    
+    & > p{
+        padding-left:4px;
+    }
+}
+
+
+
+
+
+.register-form{
+    width:490px;margin:0 auto;padding-top:0px;
+
+    div.form-row{
+        margin-top:50px;
+
+        .ui-tiptext-container{
+            margin-bottom:6px;margin-top:-42px;position:absolute;
+        }
+    }
+
+    div.form-ctrl{
+        margin-top:10px;
+    }
+}

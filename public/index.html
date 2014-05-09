@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>UPT,uptower.cn 专业的地理位置服务提供者</title>
+
+    <link media="screen" href="https://a.alipayobjects.com/alice/one/1.1.0/one.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/style/index.css" />
+</head>
+
+<body ng-controller="xhub.Index.Index">
+    <div class="header-wrap">
+        <div class="header">
+            <a href="javascript:window.location = '/';void(0);" class="logo">
+                <img src="/images/logo.png" />
+            </a>
+
+            <ul class="header-nav">
+                <li class="header-nav-active"><a href="javascript:window.location = '/';void(0);">首页</a>
+                </li>
+                <li><a href="/app/">我的地图</a>
+                </li>
+            </ul>
+
+            <app:profile></app:profile>
+        </div>
+    </div>
+
+    <div class="bar-wrap" >
+        <div class="bar" >
+            <ul class="bar-ctls">
+                <li><a href="#" target="_blank">通知：自4月1日起，本平台将推出开放API，需要引用地图的用户可通过API调用，详细点击这里查看</a></li>
+            </ul>
+            <ul class="bar-ctls bar-ctls-right" >
+            </ul>
+        </div>
+    </div>
+
+    <div class="content-wrap">
+        <div class="content">
+            <ng:view></ng:view>
+        </div>
+    </div>
+
+
+    <div class="footer-wrap">
+    <ul class="summary">
+        <li>
+            <header>协同工作</header>
+            <p>想分享，想讨论，想征求意见？@一下全搞定</p>
+        </li>
+        <li>
+            <header>待办事项</header>
+            <p>快捷好用的待办工作，随时记录、随时处理。</p>
+            <p>给别人委派工作，随时跟踪，快捷方便。</p>
+        </li>
+        <li>
+            <header>工作日历</header>
+            <p>签到打卡，快捷方便；要调休？调整一下工作日就ok；</p>
+            <p>要请假，带薪的、不带薪的？工时自动管理的哦。</p>
+        </li>
+        <li>
+            <header>文档管理</header>
+            <p>集中统一的文档管理，和杂乱无章永远再见。</p>
+            <p>多版本控制，修改都有记录，随时等待追溯。</p>
+        </li>
+    </ul>
+
+    <ul class="summary">
+        <li>
+            <header>随手记</header>
+            <p>在线的记事本，想临时记录个电话号码、邮箱地址？随手就可以。</p>
+        </li>
+    </ul>
+    </div>
+
+    <script src="/assets/sea-modules/seajs/seajs/2.1.1/sea.js"></script>
+    <script src="/assets/sea_config.js"></script>
+    <script>
+    seajs.use("index", function(mod) {
+        mod.startup();
+    });
+    </script>
+</body>
+
+</html>

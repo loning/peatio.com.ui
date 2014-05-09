@@ -1,0 +1,30 @@
+{
+  "family": "xhub",
+  "name": "index",
+  "version": "1.0.0",
+  "description": "ng module xhub.Index",
+  "homepage": "",
+  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "https://git.oschina.net/uptower/hc.site.xhub.git"
+  },
+  "bugs": {
+    "url": ""
+  },
+  "keywords": ["widget"],
+  "licenses": "MIT",
+  "spm": {
+    "output": ["index.js"],
+    "alias": {
+    	"angularjs": "angular/angularjs/1.1.5/angular",
+    	"angularjs-resource" : "angular/angularjs/1.1.5/angular-resource",
+    	"app":"xhub/app/1.0.0/app",
+      "ext":"xhub/app/1.0.0/ext",
+      "jquery":"jquery/jquery/1.10.1/jquery"
+    },
+    "include":"all",
+    "devAlias": {},
+    "engines": {}
+  }
+}

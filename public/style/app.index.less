@@ -1,0 +1,171 @@
+@charset "utf-8";
+
+@import "app.less";
+@import "app.bar.less";
+@import "app.index.menu.less";
+
+div.content-wrap > div.content{
+	min-height:500px;
+}
+
+
+div.content > div.side{
+	width:244px;
+	float:left;
+}
+
+div.content > div.main{
+	width:738px;
+	float:right;
+	padding-right:5px;
+	background:#fff;
+
+	&:after{
+		clear:both;
+	}
+
+	& > div.subject{
+		height:55px;
+		line-height:55px;
+		border-bottom: 1px solid #3C9AD9;
+		background:#fff;
+
+
+		& > h3{
+			font-size:16px;
+			color:#111;
+			margin-left:10px;
+		}
+	}
+}
+
+.profile-32{
+	width:32px;height:32px;
+}
+
+div.notice-list .loading{
+	width:172px;
+	margin:0px auto;
+	margin-top:5px;
+	margin-bottom:5px;
+	margin-left:280px;
+	display:inline-block;
+}
+
+div.notice-list > ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	padding-top:15px;padding-bottom:15px;
+	overflow:auto;
+
+	& > li{
+		border-bottom:1px dotted #999;
+		margin-bottom:10px;
+		padding-bottom:10px;
+		overflow:auto;
+
+		& > .profile{
+			width:60px;
+			float:left;
+
+			& > .profile-32{
+				margin-left:14px;
+				margin-right:14px;
+				margin-top:0px;
+			}
+		}
+
+		& > div.notice-list-item-content{
+			margin-left:60px;
+			padding-right:15px;
+
+			i.ic-marker{
+				width:16px;
+				height:16px;
+				display:inline-block;
+				background:url(images/ic_marker.png);
+				position:relative;
+				top:3px;
+				margin-left:4px;
+				margin-right:2px;
+			}
+
+			i.ic-map{
+				width:16px;
+				height:16px;
+				display:inline-block;
+				background:url(images/ic_map.png);
+				position:relative;
+				top:3px;
+				margin-left:4px;
+				margin-right:2px;
+			}
+
+			& > .notice-list-item-title{
+				margin-top:-2px;
+
+				font-size:13px;
+
+				*{
+					font-size:13px;
+				}
+
+				& > usr-name{
+					font-size:13px;
+				}
+
+				> .notice-list-item-time{
+					float:right;
+					color:#666;
+					font-size:12px;
+				}
+			}
+
+			& > .notice-list-item-desc{
+				margin-left:70px;
+				border-left:2px solid #ccc;
+				padding-left:8px;
+				padding-right:5px;
+				line-height:20px;
+				margin-top:5px;
+				margin-bottom:5px;
+				color:#777;
+				font-size:13px;
+
+				p{
+					color:#777;
+					font-size:13px;
+
+					margin-top:4px;
+					margin-bottom:4px;
+				}
+			}
+
+			& > ul.notice-list-item-ctrl{
+				list-style:none;
+				margin:0px;
+				margin-top:10px;
+				padding:0px;
+
+				& > li{
+					color:#666;
+					margin-right:10px;
+					float:left;
+
+					&.s{
+						color:#ccc;
+					}
+
+					&:last-child:after{
+						content:'.';
+						height:0px;
+						overflow:hidden;
+						line-height:0px;
+						clear:left;
+					}
+				}
+			}
+		}
+	}
+}
